@@ -1,0 +1,6 @@
+framework module CYShare {
+  umbrella header "CYShare-umbrella.h"
+
+  export *
+  module * { export * }
+}

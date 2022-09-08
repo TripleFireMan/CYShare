@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		4C61423A28C97C64001F6D1C /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4C61423D28C97C64001F6D1C /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				4C61423E28C97C6A001F6D1C /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = package;
+			productName = package;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -60,10 +74,10 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AF98FA47E1C306DE2411B878 /* CYShare.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CYShare.podspec; path = ../CYShare.podspec; sourceTree = "<group>"; };
-		C53B92F215BFD15A48C70E64 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AF98FA47E1C306DE2411B878 /* CYShare.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CYShare.podspec; path = ../CYShare.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C53B92F215BFD15A48C70E64 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C6FD43DE101B750FB61CDA3C /* Pods-CYShare_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYShare_Tests.release.xcconfig"; path = "Target Support Files/Pods-CYShare_Tests/Pods-CYShare_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D0C40602BBF6002084D9F72E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D0C40602BBF6002084D9F72E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DD92850F726AF9CF4C556B5C /* Pods-CYShare_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYShare_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CYShare_Tests/Pods-CYShare_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E022388A71692CB55F6C44BF /* Pods-CYShare_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYShare_Example.debug.xcconfig"; path = "Target Support Files/Pods-CYShare_Example/Pods-CYShare_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F004EF9658FA54C963C7A9AF /* Pods-CYShare_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYShare_Example.release.xcconfig"; path = "Target Support Files/Pods-CYShare_Example/Pods-CYShare_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +207,6 @@
 				DD92850F726AF9CF4C556B5C /* Pods-CYShare_Tests.debug.xcconfig */,
 				C6FD43DE101B750FB61CDA3C /* Pods-CYShare_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +261,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = 2731180;
 				TargetAttributes = {
+					4C61423A28C97C64001F6D1C = {
+						CreatedOnToolsVersion = 13.4.1;
+						DevelopmentTeam = M99LZTCK8N;
+						ProvisioningStyle = Automatic;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +276,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -268,6 +287,7 @@
 			targets = (
 				6003F589195388D20070C39A /* CYShare_Example */,
 				6003F5AD195388D20070C39A /* CYShare_Tests */,
+				4C61423A28C97C64001F6D1C /* package */,
 			);
 		};
 /* End PBXProject section */
@@ -317,6 +337,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4C61423E28C97C6A001F6D1C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /Library/Frameworks/Python.framework/Versions/3.7/bin/python3;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# 使用python脚本来实现，每次更改完之后，自动打包，然后发布到kcspec源的功能\n# 步骤\n# 1. 修改podspec的版本号，自增\n# 2. 提交代码并推送到远程\n# 3. 打tag\n# 4. 发布\nimport sys\nimport os\n\n\n\n# 更新pod版本，并\ndef changePodSpecVersion(filename):\n    f = open(filename, \"r+\")\n    print (\"文件名为: \", f.name)\n \n    shouldModifire = '' \n    content = ''\n    str_replace = 's.version      = '\n    print(\"修改的行：\",str_replace)\n    for line in f.readlines():                          #依次读取每行  \n        content = content + line\n        line = line.strip()                             #去掉每行头尾空白\n          \n        if str_replace in line:\n            shouldModifire = line\n    #查找到需要修改的行\n    print('shouldModifire%s'%shouldModifire)\n    items = shouldModifire.split('=')\n    print(items)\n    versions = items[1].split('.')\n    versions_last_length = len(versions[2])\n    versions_last = int(versions[2][:versions_last_length-1])\n    versions_last_int = (versions_last) + 1\n    newVersion = str(versions[0])+'.'+ str(versions[1]) + '.' + str(versions_last_int) + '\"'\n    shouldReplaceItem = items[0] + '=' + newVersion\n\n    #替换相应的版本号，并写入文件\n    replaceed = content.replace(shouldModifire,shouldReplaceItem)\n    print('修改版本号:' + shouldModifire + '=>' +  shouldReplaceItem)\n    \n    #写入文件\n    f.seek(0)\n    f.truncate()    \n    f.write(replaceed)\n    f.flush()\n    #关闭文件\n    f.close()\n    return newVersion\n\nos.chdir('..')\n# 如果工作区是干净的，退出脚本执行\nfor line in os.popen(\"git status\").readlines():\n    if \"nothing to commit, working tree clean\" in line.strip() :\n        sys.exit()\n\n# 获取xcode环境变量，使脚本更加通用化，可以直接复制到任何一个pod子库里面了\npod_file_name = \"CYKit\"\n# 修改版本号\nnewversion = changePodSpecVersion(\"{0}.podspec\".format(pod_file_name))\n# 提交代码\nos.system('git add .')\n# 提交并填写信息\nos.system('git commit -a -m \"脚本自动提交\"')\n# 推送\nos.system('git push origin master')\n# 打tag\nos.system('git tag -a {0} -m \"自动tag\"'.format(newversion))\n# 推送tag\nos.system('git push origin {0}'.format(newversion))\n\n# 翻墙\nos.system('export HTTP_PROXY=http://127.0.0.1:58591; export HTTPS_PROXY=http://127.0.0.1:58591; export ALL_PROXY=socks5://127.0.0.1:51837')\n# 发布版本\nos.system('pod trunk push {0}.podspec --allow-warnings --verbose '.format(pod_file_name))\n# 切换到源目录，并更新\nos.system('pod repo update cocoapods')\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+		};
 		6022F31A1B37E2FBFB957FAF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,11 +361,29 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CYShare_Example/Pods-CYShare_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CYKit/CYKit.framework",
 				"${BUILT_PRODUCTS_DIR}/CYShare/CYShare.framework",
+				"${BUILT_PRODUCTS_DIR}/FastCoding/FastCoding.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/XHToast/XHToast.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CYKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CYShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FastCoding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XHToast.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -416,6 +471,24 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4C61423B28C97C64001F6D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M99LZTCK8N;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4C61423C28C97C64001F6D1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M99LZTCK8N;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		6003F5BD195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -570,6 +643,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4C61423D28C97C64001F6D1C /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C61423B28C97C64001F6D1C /* Debug */,
+				4C61423C28C97C64001F6D1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6003F585195388D10070C39A /* Build configuration list for PBXProject "CYShare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

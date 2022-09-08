@@ -1,0 +1,6 @@
+framework module CYKit {
+  umbrella header "CYKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
