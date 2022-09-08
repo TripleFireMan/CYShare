@@ -9,7 +9,7 @@
 #import "CYShareBottomView.h"
 #import "WXApi.h"
 #import <Photos/Photos.h>
-@interface CYShareTool(WXApiDelegate)
+@interface CYShareTool()
 @property (nonatomic, copy) CYWechatAuthBlock wechatAuthBlock;
 @property (nonatomic, copy) CYWechatShareBlock wechatShareBlock;
 @end
