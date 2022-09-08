@@ -9,6 +9,7 @@
 #import "CYShareBottomView.h"
 #import "WXApi.h"
 #import <Photos/Photos.h>
+#import "CYKitDefines.h"
 @interface CYShareTool()
 @property (nonatomic, copy) CYWechatAuthBlock wechatAuthBlock;
 @property (nonatomic, copy) CYWechatShareBlock wechatShareBlock;
@@ -20,21 +21,23 @@
     NSMutableArray *shareActions = @[].mutableCopy;
     if (shareModel.shareType & CYShareAction_Wechat) {
         CYShareAction *action = [CYShareAction shareModelWithType:CYShareAction_Wechat];
-        action.img = [UIImage imageNamed:@"details_icon_wechat"];
+        action.img = [UIImage imageNamed:@"details_icon_wechat" inBundle:CYBundle(@"CYShare") compatibleWithTraitCollection:nil];
         action.title = @"微信好友";
         [shareActions addObject:action];
     }
 
     if ((shareModel.shareType & CYShareAction_Circle) && !shareModel.isXcx) {
         CYShareAction *action = [CYShareAction shareModelWithType:CYShareAction_Circle];
-        action.img = [UIImage imageNamed:@"details_icon_pyq"];
+        action.img = [UIImage imageNamed:@"details_icon_pyq" inBundle:CYBundle(@"CYShare") compatibleWithTraitCollection:nil];
         action.title = @"朋友圈";
+
+    
         [shareActions addObject:action];
     }
 
     if (shareModel.shareType & CYShareAction_SaveToAlbum) {
         CYShareAction *action = [CYShareAction shareModelWithType:CYShareAction_SaveToAlbum];
-        action.img = [UIImage imageNamed:@"details_icon_img"];
+        action.img = [UIImage imageNamed:@"details_icon_img" inBundle:CYBundle(@"CYShare") compatibleWithTraitCollection:nil];
         action.title = @"保存相册";
         [shareActions addObject:action];
     }

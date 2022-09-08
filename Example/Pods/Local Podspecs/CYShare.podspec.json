@@ -1,6 +1,6 @@
 {
   "name": "CYShare",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "summary": "集成了微信分享事件和分享UI",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/TripleFireMan/CYShare.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "git@github.com:TripleFireMan/CYShare.git",
-    "tag": "0.1.8"
+    "tag": "0.1.9"
   },
   "platforms": {
     "ios": "10.0"

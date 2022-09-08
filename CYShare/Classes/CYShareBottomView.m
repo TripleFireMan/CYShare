@@ -224,7 +224,7 @@
     @weakify(self);
     if (!_closeBtn) {
         _closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_closeBtn setImage:[UIImage imageNamed:@"pop_btn_close"] forState:UIControlStateNormal];
+        [_closeBtn setImage:[UIImage imageNamed:@"pop_btn_close" inBundle:CYBundle(@"CYShare") withConfiguration:nil] forState:UIControlStateNormal];
         [_closeBtn setImageEdgeInsets:UIEdgeInsetsMake(9, 9, 9, 9)];
         [[_closeBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
             @strongify(self);

@@ -7,12 +7,18 @@
 //
 
 #import "CYAppDelegate.h"
-
+#import "CYShareTool.h"
 @implementation CYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [CYShareTool shareWithShareModel:[CYShareModel shareModelWithImg:nil actionType:^(CYShareAction * _Nonnull) {
+                
+            }]];
+    });
+
     return YES;
 }
 
