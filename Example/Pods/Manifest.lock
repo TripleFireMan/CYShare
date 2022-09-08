@@ -53,6 +53,7 @@ PODS:
     - CYKit
     - Masonry
     - SDWebImage
+    - WechatOpenSDK
   - FastCoding (3.3)
   - Masonry (1.1.0)
   - MJExtension (3.2.2)
@@ -61,6 +62,7 @@ PODS:
   - SDWebImage (5.13.2):
     - SDWebImage/Core (= 5.13.2)
   - SDWebImage/Core (5.13.2)
+  - WechatOpenSDK (1.9.7)
   - XHToast (1.4.0)
 
 DEPENDENCIES:
@@ -76,6 +78,7 @@ SPEC REPOS:
     - MJRefresh
     - ReactiveObjC
     - SDWebImage
+    - WechatOpenSDK
     - XHToast
 
 EXTERNAL SOURCES:
@@ -85,15 +88,16 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   CYKit: 18aa955b55d8abb5f858ff5360ce434e9907b255
-  CYShare: 1e64b94954b6c2c47fc7b037f473fbbe2e26912f
+  CYShare: 7877c0483b769b34bf32bc2a9d6e022da30e4739
   FastCoding: 3b590f7143a229780fa744b35084d85d9461587e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
   MJRefresh: 72a46ecaa2a0feaf48fc5198dff95f25f8bb27c6
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
+  WechatOpenSDK: 2f0ae448c7525cb5c27db5f7aa0f568de0988fa4
   XHToast: 3b354766d56d9df8fef8e64387bbd25c90d71a86
 
-PODFILE CHECKSUM: d8b35aeb76454f5f3bcd2672a6830baf4eda8666
+PODFILE CHECKSUM: cac7c7f2a9544e3ccf2d782c2ff617e2201c0fc7
 
 COCOAPODS: 1.11.3

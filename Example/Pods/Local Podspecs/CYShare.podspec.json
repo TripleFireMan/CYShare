@@ -1,7 +1,7 @@
 {
   "name": "CYShare",
   "version": "0.1.0",
-  "summary": "分享组件",
+  "summary": "集成了分享事件和分享UI",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/TripleFireMan/CYShare.git",
   "license": {
@@ -27,6 +27,9 @@
 
     ],
     "SDWebImage": [
+
+    ],
+    "WechatOpenSDK": [
 
     ]
   }

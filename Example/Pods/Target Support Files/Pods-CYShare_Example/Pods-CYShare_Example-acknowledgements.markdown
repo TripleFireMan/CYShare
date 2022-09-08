@@ -210,6 +210,11 @@ THE SOFTWARE.
 
 
 
+## WechatOpenSDK
+
+Copyright 2020 tencent.com. All rights reserved.
+
+
 ## XHToast
 
 The MIT License (MIT)
