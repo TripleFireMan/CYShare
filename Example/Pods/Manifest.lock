@@ -49,7 +49,7 @@ PODS:
     - MJRefresh (= 3.2.2)
     - ReactiveObjC
     - XHToast
-  - CYShare (0.1.0):
+  - CYShare (0.1.8):
     - CYKit
     - Masonry
     - SDWebImage
@@ -88,7 +88,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   CYKit: 18aa955b55d8abb5f858ff5360ce434e9907b255
-  CYShare: 7877c0483b769b34bf32bc2a9d6e022da30e4739
+  CYShare: 5e50506e3e17d25118f0e815727a2a558a110203
   FastCoding: 3b590f7143a229780fa744b35084d85d9461587e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876

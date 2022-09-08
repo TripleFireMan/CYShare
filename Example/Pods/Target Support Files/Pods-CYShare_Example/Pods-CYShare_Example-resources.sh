@@ -106,6 +106,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/CYKit/CYKit/Resources/image_navigation_close@2x.png"
   install_resource "${PODS_ROOT}/CYKit/CYKit/Resources/image_navigation_close@3x.png"
   install_resource "${PODS_ROOT}/CYKit/CYKit/Resources/CYKit.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/CYShare/CYShare.bundle"
   install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -118,6 +119,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/CYKit/CYKit/Resources/image_navigation_close@2x.png"
   install_resource "${PODS_ROOT}/CYKit/CYKit/Resources/image_navigation_close@3x.png"
   install_resource "${PODS_ROOT}/CYKit/CYKit/Resources/CYKit.bundle"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/CYShare/CYShare.bundle"
   install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
 fi
 
