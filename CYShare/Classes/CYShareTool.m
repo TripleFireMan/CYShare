@@ -164,10 +164,10 @@
     WXWebpageObject *webObj = [WXWebpageObject object];
     webObj.webpageUrl = pushURL;//分享链接
     //完成发送对象实例
-//    urlMessage.mediaObject = webObj;
-    WXImageObject *img = [WXImageObject object];
-    img.imageData = UIImagePNGRepresentation(image);
-    urlMessage.mediaObject = img;
+    urlMessage.mediaObject = webObj;
+//    WXImageObject *img = [WXImageObject object];
+//    img.imageData = UIImagePNGRepresentation(image);
+//    urlMessage.mediaObject = img;
     sendReq.message = urlMessage;
     //发送分享信息
     [WXApi sendReq:sendReq completion:nil];
