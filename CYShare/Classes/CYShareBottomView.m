@@ -96,6 +96,7 @@
         [sub removeFromSuperview];
     }
     __block UIButton *curBtn = nil;
+    NSInteger cnt = actions.count;
     [actions enumerateObjectsUsingBlock:^(CYShareAction * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIButton *btn = [self buttonWithAction:obj];
         [self.stackView addArrangedSubview:btn];
@@ -105,6 +106,10 @@
         }];
         curBtn = btn;
     }];
+
+    CGFloat totalWidth = kScreenWidth - 140;
+    CGFloat space = (totalWidth - 60 * cnt) / (cnt-1);
+    self.stackView.spacing = CY_CLAMP(space, 10, 120);
     
 }
 
@@ -257,7 +262,7 @@
         _stackView = [[UIStackView alloc] init];
         _stackView.axis = UILayoutConstraintAxisHorizontal;
         _stackView.alignment = UIStackViewAlignmentLeading;
-        _stackView.spacing = kScreenWidth - 140 - 120;
+        _stackView.spacing = 60;
     }
     return _stackView;
 }
