@@ -157,7 +157,7 @@
     [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.offset(49);
         make.left.right.offset(0);
-        make.height.offset(1);
+        make.height.offset(CY_Sigle_Line_Height);
     }];
     
     [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -193,7 +193,7 @@
 - (UIView *) container{
     if (!_container) {
         _container = [UIView new];
-        _container.backgroundColor = [UIColor whiteColor];
+        _container.backgroundColor = CYIOS13BackgroundColor();
     }
     return _container;
 }
@@ -218,7 +218,7 @@
     if (!_titleLabel) {
         _titleLabel = [UILabel new];
         _titleLabel.font = CYPingFangSCMedium(16);
-        _titleLabel.textColor = kTitleColor();
+        _titleLabel.textColor = CYIOS13LabelColor();
         _titleLabel.text = @"分享到";
     }
     return _titleLabel;
@@ -243,7 +243,7 @@
     if (!_line) {
         _line = [UIImageView new];
         
-        _line.backgroundColor = kLineColor();
+        _line.backgroundColor = CYIOS13LineColor();
     }
     return _line;
 }
@@ -252,7 +252,7 @@
 - (UIImageView *) bottomLine{
     if (!_bottomLine) {
         _bottomLine = [UIImageView new];
-        _bottomLine.backgroundColor = kLineColor();
+        _bottomLine.backgroundColor = CYIOS13LineColor();
     }
     return _bottomLine;
 }
@@ -280,7 +280,7 @@
     @weakify(self);
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setTitle:action.title forState:UIControlStateNormal];
-    [button setTitleColor:kSummaryColor() forState:UIControlStateNormal];
+    [button setTitleColor:CYIOS13SecondLabelColor() forState:UIControlStateNormal];
     [button setImage:action.img forState:UIControlStateNormal];
     button.titleLabel.font = CYPingFangSCRegular(15);
     button.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 36, 0);
