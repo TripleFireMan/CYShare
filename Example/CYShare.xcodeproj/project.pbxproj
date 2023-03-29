@@ -21,6 +21,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		4C9DA88029D409DD00681D02 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9DA87B29D409DD00681D02 /* UserNotifications.framework */; };
+		4C9DA88129D409DD00681D02 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9DA87C29D409DD00681D02 /* libsqlite3.tbd */; };
+		4C9DA88229D409DD00681D02 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9DA87D29D409DD00681D02 /* libz.tbd */; };
+		4C9DA88329D409DD00681D02 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9DA87E29D409DD00681D02 /* SystemConfiguration.framework */; };
+		4C9DA88429D409DD00681D02 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9DA87F29D409DD00681D02 /* CoreTelephony.framework */; };
+		4C9DA88629D409EC00681D02 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9DA88529D409EC00681D02 /* WebKit.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -52,6 +58,12 @@
 
 /* Begin PBXFileReference section */
 		27BA984390D4A9B86F9038C0 /* Pods_CYShare_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CYShare_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9DA87B29D409DD00681D02 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		4C9DA87C29D409DD00681D02 /* libsqlite3.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		4C9DA87D29D409DD00681D02 /* libz.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4C9DA87E29D409DD00681D02 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4C9DA87F29D409DD00681D02 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4C9DA88529D409EC00681D02 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		6003F58A195388D20070C39A /* CYShare_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYShare_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,9 +100,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9DA88629D409EC00681D02 /* WebKit.framework in Frameworks */,
+				4C9DA88129D409DD00681D02 /* libsqlite3.tbd in Frameworks */,
+				4C9DA88029D409DD00681D02 /* UserNotifications.framework in Frameworks */,
+				4C9DA88229D409DD00681D02 /* libz.tbd in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				4C9DA88329D409DD00681D02 /* SystemConfiguration.framework in Frameworks */,
+				4C9DA88429D409DD00681D02 /* CoreTelephony.framework in Frameworks */,
 				BC8B842108B1537A0C93E08B /* Pods_CYShare_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +151,12 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C9DA88529D409EC00681D02 /* WebKit.framework */,
+				4C9DA87F29D409DD00681D02 /* CoreTelephony.framework */,
+				4C9DA87C29D409DD00681D02 /* libsqlite3.tbd */,
+				4C9DA87D29D409DD00681D02 /* libz.tbd */,
+				4C9DA87E29D409DD00681D02 /* SystemConfiguration.framework */,
+				4C9DA87B29D409DD00681D02 /* UserNotifications.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
