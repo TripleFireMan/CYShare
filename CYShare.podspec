@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CYShare'
-  s.version          = '0.1.31'
+  s.version          = '0.1.36'
   s.summary          = '集成了微信分享事件和分享UI'
 
 # This description is used to generate tags and improve search results.
