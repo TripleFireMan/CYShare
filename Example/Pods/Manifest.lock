@@ -14,26 +14,18 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - CYKit (0.7.47):
+  - CYKit (0.7.53):
     - AFNetworking
-    - CYKit/Categorys (= 0.7.47)
-    - CYKit/Class (= 0.7.47)
-    - CYKit/UIKit (= 0.7.47)
+    - CYKit/Categorys (= 0.7.53)
+    - CYKit/Class (= 0.7.53)
+    - CYKit/UIKit (= 0.7.53)
     - FastCoding
     - Masonry
     - MJExtension (= 3.2.2)
     - MJRefresh (= 3.2.2)
     - ReactiveObjC
     - XHToast
-  - CYKit/Categorys (0.7.47):
-    - AFNetworking
-    - FastCoding
-    - Masonry
-    - MJExtension (= 3.2.2)
-    - MJRefresh (= 3.2.2)
-    - ReactiveObjC
-    - XHToast
-  - CYKit/Class (0.7.47):
+  - CYKit/Categorys (0.7.53):
     - AFNetworking
     - FastCoding
     - Masonry
@@ -41,7 +33,7 @@ PODS:
     - MJRefresh (= 3.2.2)
     - ReactiveObjC
     - XHToast
-  - CYKit/UIKit (0.7.47):
+  - CYKit/Class (0.7.53):
     - AFNetworking
     - FastCoding
     - Masonry
@@ -49,7 +41,15 @@ PODS:
     - MJRefresh (= 3.2.2)
     - ReactiveObjC
     - XHToast
-  - CYShare (0.1.17):
+  - CYKit/UIKit (0.7.53):
+    - AFNetworking
+    - FastCoding
+    - Masonry
+    - MJExtension (= 3.2.2)
+    - MJRefresh (= 3.2.2)
+    - ReactiveObjC
+    - XHToast
+  - CYShare (0.1.29):
     - CYKit
     - Masonry
     - SDWebImage
@@ -59,10 +59,10 @@ PODS:
   - MJExtension (3.2.2)
   - MJRefresh (3.2.2)
   - ReactiveObjC (3.1.1)
-  - SDWebImage (5.13.2):
-    - SDWebImage/Core (= 5.13.2)
-  - SDWebImage/Core (5.13.2)
-  - WechatOpenSDK (1.9.7)
+  - SDWebImage (5.15.5):
+    - SDWebImage/Core (= 5.15.5)
+  - SDWebImage/Core (5.15.5)
+  - WechatOpenSDK (2.0.2)
   - XHToast (1.4.0)
 
 DEPENDENCIES:
@@ -86,18 +86,18 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  CYKit: 09d300c84581c514deda458a04d3139dd91c33a7
-  CYShare: cd75547de36ef6d2a0e196c62189918e738c5888
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  CYKit: c306b3aaed4320bb24ee15d769b4d53cfdb7a497
+  CYShare: e347b6a9bb7406a6d174e564144a7b0931a169a5
   FastCoding: 3b590f7143a229780fa744b35084d85d9461587e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
   MJRefresh: 72a46ecaa2a0feaf48fc5198dff95f25f8bb27c6
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
-  WechatOpenSDK: 2f0ae448c7525cb5c27db5f7aa0f568de0988fa4
+  SDWebImage: fd7e1a22f00303e058058278639bf6196ee431fe
+  WechatOpenSDK: e79349b37d44c015210f39fd6d2379f0ec60efe2
   XHToast: 3b354766d56d9df8fef8e64387bbd25c90d71a86
 
-PODFILE CHECKSUM: cac7c7f2a9544e3ccf2d782c2ff617e2201c0fc7
+PODFILE CHECKSUM: 35080319222156fdd9b34a028a3086be38f02e26
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.0
